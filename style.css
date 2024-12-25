@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', serif;
+    background-color: #1e3a8a; /* Deep Blue */
+    color: #f9fafb; /* Off-White */
+    height: 5rem;
+    line-height: 5rem;
+    letter-spacing: 2px;
+}
+
+/* Choices */
+.choice {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    background-color: #60a5fa; /* Light Blue */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.choice:hover {
+    background-color: #2563eb; /* Darker Blue */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #f1f5f9; /* Light Gray */
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+/* Scoreboard */
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #1e293b; /* Dark Slate */
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+/* Message Box */
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #16a34a; /* Green */
+    color: #f9fafb; /* Off-White */
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Selections */
+.sec-container {
+    display: inline-block;
+    width: 15rem;
+    margin-top: 2rem;
+}
+
+.selection {
+    background-color: #d1d5db; /* Gray */
+    color: #111827; /* Black */
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Round Input */
+.round-container {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.round-container label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #1e293b; /* Dark Slate */
+}
+
+.round-container input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 2px solid #94a3b8; /* Gray-Blue */
+    width: 50%;
+    text-align: center;
+    background-color: #f1f5f9; /* Light Gray */
+    color: #111827; /* Dark */
+}
+
+/* Restart Button */
+#restart-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #dc2626; /* Red */
+    color: #f9fafb; /* Off-White */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#restart-btn:hover {
+    background-color: #b91c1c; /* Darker Red */
+    transform: scale(1.05);
+}
